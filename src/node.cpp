@@ -60,7 +60,7 @@ void publish_scan(ros::Publisher *pub,
                   float angle_min, float angle_max,
                   std::string frame_id)
 {
-    ROS_INFO("publish_scan node_count = %d, angle_min = %f, angle_max = %f, frame_id = %s", node_count, angle_min, angle_max, frame_id.c_str());
+    ROS_INFO("publish_scan node_count = %lu, angle_min = %f, angle_max = %f, frame_id = %s", node_count, angle_min, angle_max, frame_id.c_str());
  
     static int scan_count = 0;
     sensor_msgs::LaserScan scan_msg;
